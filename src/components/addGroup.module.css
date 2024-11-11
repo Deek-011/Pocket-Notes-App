@@ -1,0 +1,149 @@
+.overlay {
+  position: absolute;
+  height: 100vh;
+  background-color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  /* line-height: 1.3rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.commonText {
+  font-size: 0.8rem;
+  font-weight: 550;
+  letter-spacing: 0.035em;
+  line-height: 2.4rem;
+}
+.textInput {
+  display: flex;
+}
+.textField {
+    border-radius: 0.8rem;
+    border: 2px solid #cccccc;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    padding: 0rem 0.6rem;
+    outline: none;
+    word-spacing: 1px;
+    width: 64%;
+}
+.textField::placeholder{
+  color: #cccccc;
+}
+.containerPopup {
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  width: 24rem;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+}
+.createButton {
+  background: #001f8b;
+  color: white;
+  padding: 0.3rem 0.9rem;
+  border-radius: 0.5rem;
+  float: right;
+  border: none;
+}
+.colorPlateContainer {
+  display: flex;
+}
+.borderColor {
+  border: 2px solid black; /* Adds a black border */
+}
+.color1 {
+  background: #b38bfa;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  margin-left: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+.color2 {
+  background: #ff79f2;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.color3 {
+  background: #43e6fc;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.color4 {
+  background: #f19576;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.color5 {
+  background: #0047ff;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+.color6 {
+  background: #6691ff;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  place-self: center;
+  margin: 0 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ====MEDIA QUERY ==== */
+
+@media only screen and (max-width: 650px){
+  .containerPopup{
+    width: 19rem;
+  }
+  .commonText{
+    font-size: 0.7rem;
+  font-weight: 550;
+  letter-spacing: 0.035rem;
+  line-height: 2rem;
+  }
+  .textField{
+    margin-left: 1.3rem;
+    /* margin-bottom: 0.5rem; */
+  }
+  .color1{
+    margin-left: 1rem;
+  }
+}
